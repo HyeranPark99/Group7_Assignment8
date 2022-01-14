@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    color: black;
+    background-color:lightyellow;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dashed;
+    background-color: lightpink;
+    color: white;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+ 
+table{
+  border-collapse: collapse;
+  margin-left: 40px;
+  margin-top: 10px;
+}
