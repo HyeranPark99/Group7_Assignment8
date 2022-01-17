@@ -1,38 +1,161 @@
-.App {
+
+.light-gray-color {
+  background-color: #ebedf0;
+}
+
+.green-yellow-color {
+  background-color: greenyellow;
+}
+
+.forest-color {
+  background-color: #239a3b;
+}
+
+.gold-color {
+  background-color: gold;
+}
+
+.blue-color {
+  background-color: #00e5ff;
+}
+
+.green-color {
+  background-color: #00ff2a;
+}
+
+.yellow-color {
+  background-color: #ffff00;
+}
+
+.orange-color {
+  background-color: #ffb200;
+}
+
+.red-color {
+  background-color: #ff4800;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+}
+
+table {
+  border-spacing: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+div#parent-container {
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div#preview {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 5px;
+  margin-bottom: -10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  margin: 0 auto;
+  border: none;
+  border-radius: 12px;
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#rmv-row-btn{
+  background-color: rgb(177, 0, 0);
+  margin: 0 3px;
 }
 
-.App-link {
-  color: #61dafb;
+#rmv-row-btn:hover{
+  background-color: white;
+  transition: all 200ms ease-in;
+  color: black;
+  border: solid 1px black;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#rmv-column-btn{
+  background-color: rgb(177, 0, 0);  
+  margin: 0 3px;
+}
+
+#rmv-column-btn:hover{
+  background-color: white;
+  transition: all 200ms ease-in;
+  color: black;
+  border: solid 1px black;
+}
+
+#row-btn{
+  background-color: green;
+  margin: 0 3px;
+}
+
+#row-btn:hover{
+  background-color: white;
+  transition: all 200ms ease-in;
+  color: black;
+  border: solid 1px black;
+}
+
+#column-btn{
+  background-color: green;
+  margin: 0 3px;
+}
+
+#column-btn:hover{
+  background-color: white;
+  transition: all 200ms ease-in;
+  color: black;
+  border: solid 1px black;
+}
+
+#fill-all{
+  background-color: black;
+  margin: 0 3px;
+}
+
+#fill-all:hover{
+  background-color: goldenrod;
+  transition: all 200ms ease-in;
+  color: black;
+  border: solid 0px black;
+}
+
+#clear-all{
+  background-color: black;
+  margin: 0 3px;
+}
+
+#clear-all:hover{
+  background-color: goldenrod;
+  transition: all 200ms ease-in;
+  color: black;
+  border: solid 0px black;
+}
+
+#fill-only{
+  background-color: black;
+  margin: 0 3px;
+}
+
+#fill-only:hover{
+  background-color: goldenrod;
+  transition: all 200ms ease-in;
+  color: black;
+  border: solid 0px black;
+}
+
+label {
+  font-weight: bold;
+  padding-right: 5px;
 }
