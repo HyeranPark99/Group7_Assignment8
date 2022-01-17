@@ -1,161 +1,180 @@
+body {
+    margin: 0;
+}
 
 .light-gray-color {
-  background-color: #ebedf0;
+    background-color: #ebedf0;
 }
 
 .green-yellow-color {
-  background-color: greenyellow;
+    background-color: greenyellow;
 }
 
 .forest-color {
-  background-color: #239a3b;
+    background-color: #239a3b;
 }
 
 .gold-color {
-  background-color: gold;
+    background-color: gold;
 }
 
 .blue-color {
-  background-color: #00e5ff;
+    background-color: #00e5ff;
 }
 
 .green-color {
-  background-color: #00ff2a;
+    background-color: #00ff2a;
 }
 
 .yellow-color {
-  background-color: #ffff00;
+    background-color: #ffff00;
 }
 
 .orange-color {
-  background-color: #ffb200;
+    background-color: #ffb200;
 }
 
 .red-color {
-  background-color: #ff4800;
+    background-color: #ff4800;
 }
 
 td {
-  width: 30px;
-  height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 table {
-  border-spacing: 7px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+    border-spacing: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 div#parent-container {
-  text-align: center;
- 
+    text-align: center;
 }
 
 div#preview {
-  height: 40px;
-  width: 40px;
-  border-radius: 10px;
-  display: inline-block;
-  margin: 5px;
-  margin-bottom: -10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: -10px;
 }
 
 button {
-  margin: 0 auto;
-  border: none;
-  border-radius: 12px;
-  color: whitesmoke;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 15px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
 }
 
-#rmv-row-btn{
-  background-color: rgb(177, 0, 0);
-  margin: 0 3px;
+#rmv-row-btn {
+    background-color: rgb(177, 0, 0);
+    margin: 0 3px;
 }
 
-#rmv-row-btn:hover{
-  background-color: white;
-  transition: all 200ms ease-in;
-  color: black;
-  border: solid 1px black;  
+#rmv-row-btn:hover {
+    background-color: white;
+    transition: all 200ms ease-in;
+    color: black;
+    border: solid 1px black;
 }
 
-#rmv-column-btn{
-  background-color: rgb(177, 0, 0);  
-  margin: 0 3px;
+#rmv-column-btn {
+    background-color: rgb(177, 0, 0);
+    margin: 0 3px;
 }
 
-#rmv-column-btn:hover{
-  background-color: white;
-  transition: all 200ms ease-in;
-  color: black;
-  border: solid 1px black;
+#rmv-column-btn:hover {
+    background-color: white;
+    transition: all 200ms ease-in;
+    color: black;
+    border: solid 1px black;
 }
 
-#row-btn{
-  background-color: green;
-  margin: 0 3px;
+#row-btn {
+    background-color: green;
+    margin: 0 3px;
 }
 
-#row-btn:hover{
-  background-color: white;
-  transition: all 200ms ease-in;
-  color: black;
-  border: solid 1px black;
+#row-btn:hover {
+    background-color: white;
+    transition: all 200ms ease-in;
+    color: black;
+    border: solid 1px black;
 }
 
-#column-btn{
-  background-color: green;
-  margin: 0 3px;
+#column-btn {
+    background-color: green;
+    margin: 0 3px;
 }
 
-#column-btn:hover{
-  background-color: white;
-  transition: all 200ms ease-in;
-  color: black;
-  border: solid 1px black;
+#column-btn:hover {
+    background-color: white;
+    transition: all 200ms ease-in;
+    color: black;
+    border: solid 1px black;
 }
 
-#fill-all{
-  background-color: black;
-  margin: 0 3px;
+#fill-all {
+    background-color: black;
+    margin: 0 3px;
 }
 
-#fill-all:hover{
-  background-color: goldenrod;
-  transition: all 200ms ease-in;
-  color: black;
-  border: solid 0px black;
+#fill-all:hover {
+    background-color: goldenrod;
+    transition: all 200ms ease-in;
+    color: black;
+    border: solid 0px black;
 }
 
-#clear-all{
-  background-color: black;
-  margin: 0 3px;
+#clear-all {
+    background-color: black;
+    margin: 0 3px;
 }
 
-#clear-all:hover{
-  background-color: goldenrod;
-  transition: all 200ms ease-in;
-  color: black;
-  border: solid 0px black;
+#clear-all:hover {
+    background-color: goldenrod;
+    transition: all 200ms ease-in;
+    color: black;
+    border: solid 0px black;
 }
 
-#fill-only{
-  background-color: black;
-  margin: 0 3px;
+#fill-only {
+    background-color: black;
+    margin: 0 3px;
 }
 
-#fill-only:hover{
-  background-color: goldenrod;
-  transition: all 200ms ease-in;
-  color: black;
-  border: solid 0px black;
+#fill-only:hover {
+    background-color: goldenrod;
+    transition: all 200ms ease-in;
+    color: black;
+    border: solid 0px black;
 }
 
 label {
-  font-weight: bold;
-  padding-right: 5px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+h1 {
+    width: 100%;
+    padding: 30px;
+    font-size: 50px;
+    background-color: black;
+    color: wheat;
+}
+
+h3 {
+    background-color: #333;
+    width: fit-content;
+    color: whitesmoke;
+    padding: 10px;
+    border: solid 1px #333;
+    border-radius: 5px;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import  Table  from "./components/Table";
+import Table from "./components/Table";
 
 class App extends Component {
 	constructor(props) {
@@ -10,11 +10,11 @@ class App extends Component {
 		const defaultColor = "light-gray-color";
 		const initialRow = 1;
 		const initialCol = 1;
-		
+
 
 		const array = Array.from({ length: initialRow }).map(x =>
 			Array.from({ length: initialCol }).map(x => defaultColor)
-		
+
 		);
 
 		this.state = {
@@ -22,10 +22,10 @@ class App extends Component {
 			currentColor: "light-gray-color",
 			colorArray: array
 		};
-		
+
 	}
 
-  // add rows 
+	// add rows 
 	addRow = () => {
 		const newRow = Array.from({ length: this.state.colorArray[0].length }).map(
 			x => this.state.defaultColor
@@ -34,12 +34,12 @@ class App extends Component {
 			{
 				colorArray: this.state.colorArray.concat([newRow])
 			},
-			
+
 		);
 	};
 
-  // add columns 
-  addCol = () => {
+	// add columns 
+	addCol = () => {
 		let newArr = this.state.colorArray.map(row => {
 			return row.concat(this.state.defaultColor);
 		});
@@ -48,7 +48,7 @@ class App extends Component {
 		});
 	};
 
-  // remove rows
+	// remove rows
 	removeRow = () => {
 		if (this.state.colorArray.length > 1) {
 			let newArr = this.state.colorArray.slice(0, -1);
@@ -62,7 +62,7 @@ class App extends Component {
 		}
 	};
 
-  // remove columns
+	// remove columns
 	removeCol = () => {
 		if (this.state.colorArray[0].length > 1) {
 			let newArr = this.state.colorArray.map(row => {
@@ -76,14 +76,14 @@ class App extends Component {
 		}
 	};
 
-  // update colors
+	// update colors
 	updateSelectedColor = e => {
 		this.setState({
 			currentColor: e.target.value
 		});
 	};
 
-  // fill all cells
+	// fill all cells
 	fillAll = () => {
 		let newArr = this.state.colorArray.map(row =>
 			row.map(() => this.state.currentColor)
@@ -92,8 +92,8 @@ class App extends Component {
 			colorArray: newArr
 		});
 	};
-  
-  // clear the color from cells
+
+	// clear the color from cells
 	clearAll = () => {
 		let newArr = this.state.colorArray.map(row =>
 			row.map(() => this.state.defaultColor)
@@ -103,7 +103,7 @@ class App extends Component {
 		});
 	};
 
-  //fill uncolored cells
+	//fill uncolored cells
 	fillUncolored = () => {
 		const { defaultColor, currentColor, colorArray } = this.state;
 		let newArr = colorArray;
@@ -119,7 +119,7 @@ class App extends Component {
 		});
 	};
 
-  // this changes color on click
+	// this changes color on click
 	handleClick = (row, col) => {
 		const { currentColor, colorArray } = this.state;
 		let newArr = colorArray;
@@ -135,32 +135,32 @@ class App extends Component {
 		});
 	};
 
-  
+
 	render() {
 		return (
 			<div id="parent-container">
 				<h1>ReactJS Grid Coloring</h1>
-        <h3>by Farai Mutukumira, Hyeran Park, Lubna Khalid</h3>
+				<h3>by: Farai Mutukumira, Hyeran Park, Lubna Khalid</h3>
 
 				<span>
-          
+
 					<button id="row-btn" onClick={this.addRow}>Add row</button>
 					<button id="rmv-row-btn" onClick={this.removeRow}> Remove row</button>
 					<button id="column-btn" onClick={this.addCol}>Add column</button>
-					<button id="rmv-column-btn"onClick={this.removeCol}> Remove column</button>
-					
+					<button id="rmv-column-btn" onClick={this.removeCol}> Remove column</button>
+
 					<label>Select color:</label>
 					<select
 						value={this.state.currentColor}
 						onChange={this.updateSelectedColor}
 					>
 						<option id="lightGray" value="light-gray-color">
-              Light Gray
+							Light Gray
 						</option>
 						<option id="greenyellow" value="green-yellow-color">
-               Green yellow
+							Green yellow
 						</option>
-						
+
 						<option id="forest" value="forest-color">
 							Forest
 						</option>
@@ -186,19 +186,19 @@ class App extends Component {
 					<div id="preview" class={this.state.currentColor}></div>
 				</span>
 
-        <button id="fill-all" onClick={this.fillAll}>Fill all</button>
+				<button id="fill-all" onClick={this.fillAll}>Fill all</button>
 				<button id="clear-all" onClick={this.clearAll}>Clear all</button>
 				<button id="fill-only" onClick={this.fillUncolored}>Fill only uncolored</button>
-				
-        <Table
+
+				<Table
 					numRows={this.state.colorArray.length}
 					numCols={this.state.colorArray[0].length}
 					colorArray={this.state.colorArray}
 					handleClick={this.handleClick}
 				/>
 
-				
-			
+
+
 			</div>
 		);
 	}
