@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
 body {
     margin: 0;
 }
@@ -41,10 +42,11 @@ body {
 td {
     width: 50px;
     height: 50px;
+    border-radius: 5px;
 }
 
 table {
-    border-spacing: 7px;
+    background-color: black;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -164,13 +166,18 @@ label {
 
 h1 {
     width: 100%;
-    padding: 30px;
-    font-size: 50px;
-    background-color: black;
-    color: wheat;
+    grid-area: text;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 10vmin;
+    margin: 0;
+    padding: 20px;
+    color: #1d9099;
+    text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
+    background-image: radial-gradient(circle, #333333, #222222);
 }
 
 h3 {
+    margin: 20px 0;
     background-color: #333;
     width: fit-content;
     color: whitesmoke;

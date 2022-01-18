@@ -139,7 +139,7 @@ class App extends Component {
 	render() {
 		return (
 			<div id="parent-container">
-				<h1>ReactJS Grid Coloring</h1>
+				<h1>React.JS Grid Coloring</h1>
 				<h3>by: Farai Mutukumira, Hyeran Park, Lubna Khalid</h3>
 
 				<span>
